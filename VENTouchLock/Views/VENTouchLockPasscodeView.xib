@@ -69,7 +69,7 @@
                 <constraint firstItem="eLU-Cf-PfB" firstAttribute="top" secondItem="bdw-Aj-hKx" secondAttribute="top" constant="100" id="X1h-a2-Thl"/>
                 <constraint firstItem="eLU-Cf-PfB" firstAttribute="leading" secondItem="bdw-Aj-hKx" secondAttribute="leading" constant="60" id="j08-YG-djA"/>
                 <constraint firstItem="hmH-B4-kMw" firstAttribute="top" secondItem="eLU-Cf-PfB" secondAttribute="bottom" constant="50" id="pIz-k1-Icu"/>
-                <constraint firstAttribute="centerX" secondItem="eLU-Cf-PfB" secondAttribute="centerX" constant="-0.5" id="xb2-T8-rCA"/>
+                <constraint firstAttribute="centerX" secondItem="eLU-Cf-PfB" secondAttribute="centerX" id="xb2-T8-rCA"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
