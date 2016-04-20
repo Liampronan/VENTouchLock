@@ -112,7 +112,7 @@
 
 - (VENTouchLockEnterPasscodeViewController *)enterPasscodeVC
 {
-    VENTouchLockEnterPasscodeViewController *enterPasscodeVC = [[VENTouchLockEnterPasscodeViewController alloc] init];
+    VENTouchLockEnterPasscodeViewController *enterPasscodeVC = [[self.touchLock.appearance.enterPasscodeViewControllerClass alloc] init];
     __weak __typeof__(self) weakSelf = self;
     enterPasscodeVC.willFinishWithResult = ^(BOOL success) {
         if (success) {
