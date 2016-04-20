@@ -14,7 +14,7 @@ static NSString *const VENTouchLockUserDefaultsKeyTouchIDActivated = @"VENTouchL
 @property (assign, nonatomic) NSUInteger passcodeAttemptLimit;
 @property (assign, nonatomic) Class splashViewControllerClass;
 @property (strong, nonatomic) UIView *snapshotView;
-@property (strong, nonatomic) DIGTouchLockAppearance *appearance;
+@property (strong, nonatomic) VENTouchLockAppearance *appearance;
 
 @end
 
@@ -26,7 +26,7 @@ static NSString *const VENTouchLockUserDefaultsKeyTouchIDActivated = @"VENTouchL
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         sharedInstance = [[[self class] alloc] init];
-        sharedInstance.appearance = [[DIGTouchLockAppearance alloc] init];
+        sharedInstance.appearance = [[VENTouchLockAppearance alloc] init];
     });
     return sharedInstance;
 }

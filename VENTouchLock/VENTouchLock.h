@@ -2,7 +2,7 @@
 #import "VENTouchLockCreatePasscodeViewController.h"
 #import "VENTouchLockEnterPasscodeViewController.h"
 #import "VENTouchLockSplashViewController.h"
-#import "DIGTouchLockAppearance.h"
+#import "VENTouchLockAppearance.h"
 
 typedef NS_ENUM(NSUInteger, VENTouchLockTouchIDResponse) {
     VENTouchLockTouchIDResponseUndefined,
