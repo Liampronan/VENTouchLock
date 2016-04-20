@@ -65,7 +65,7 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="eLU-Cf-PfB" secondAttribute="trailing" constant="60" id="H2K-iL-gwe"/>
-                <constraint firstAttribute="centerX" secondItem="hmH-B4-kMw" secondAttribute="centerX" constant="-0.5" id="OB4-g9-djM"/>
+                <constraint firstAttribute="centerX" secondItem="hmH-B4-kMw" secondAttribute="centerX" id="OB4-g9-djM"/>
                 <constraint firstItem="eLU-Cf-PfB" firstAttribute="top" secondItem="bdw-Aj-hKx" secondAttribute="top" constant="100" id="X1h-a2-Thl"/>
                 <constraint firstItem="eLU-Cf-PfB" firstAttribute="leading" secondItem="bdw-Aj-hKx" secondAttribute="leading" constant="60" id="j08-YG-djA"/>
                 <constraint firstItem="hmH-B4-kMw" firstAttribute="top" secondItem="eLU-Cf-PfB" secondAttribute="bottom" constant="50" id="pIz-k1-Icu"/>
