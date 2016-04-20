@@ -21,6 +21,7 @@
 @property (strong, nonatomic) NSString *createPasscodeConfirmLabelText;
 @property (strong, nonatomic) NSString *createPasscodeMismatchedLabelText;
 @property (strong, nonatomic) NSString *createPasscodeViewControllerTitle;
+@property (strong, nonatomic) Class enterPasscodeViewControllerClass;
 
 /**-----------------------------------------------------------------------------
  * @description Enter Passcode View Controller Preferences

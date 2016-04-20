@@ -21,6 +21,7 @@
         _splashShouldEmbedInNavigationController = NO;
         _touchIDCancelPresentsPasscodeViewController = NO;
         _navigationBarClass = [UINavigationBar class];
+        _enterPasscodeViewControllerClass = [VENTouchLockEnterPasscodeViewController class];
     }
     return self;
 }
