@@ -1,14 +1,14 @@
 #import "VENTouchLockPasscodeView.h"
-#import "VENTouchLockPasscodeCharacterView.h"
+#import "DIGTouchLockPasscodeCharacterView.h"
 @import AudioToolbox;
 
 @interface VENTouchLockPasscodeView ()
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
-@property (weak, nonatomic) IBOutlet VENTouchLockPasscodeCharacterView *firstCharacter;
-@property (weak, nonatomic) IBOutlet VENTouchLockPasscodeCharacterView *secondCharacter;
-@property (weak, nonatomic) IBOutlet VENTouchLockPasscodeCharacterView *thirdCharacter;
-@property (weak, nonatomic) IBOutlet VENTouchLockPasscodeCharacterView *fourthCharacter;
+@property (weak, nonatomic) IBOutlet DIGTouchLockPasscodeCharacterView *firstCharacter;
+@property (weak, nonatomic) IBOutlet DIGTouchLockPasscodeCharacterView *secondCharacter;
+@property (weak, nonatomic) IBOutlet DIGTouchLockPasscodeCharacterView *thirdCharacter;
+@property (weak, nonatomic) IBOutlet DIGTouchLockPasscodeCharacterView *fourthCharacter;
 
 @end
 
@@ -28,7 +28,7 @@
         _titleLabel.textColor = titleColor;
         _characterColor = characterColor;
         _characters = @[_firstCharacter, _secondCharacter, _thirdCharacter, _fourthCharacter];
-        for (VENTouchLockPasscodeCharacterView *characterView in _characters) {
+        for (DIGTouchLockPasscodeCharacterView *characterView in _characters) {
             characterView.fillColor = characterColor;
         }
     }
@@ -84,7 +84,7 @@
 - (void)setCharacterColor:(UIColor *)characterColor
 {
     _characterColor = characterColor;
-    for (VENTouchLockPasscodeCharacterView *characterView in self.characters) {
+    for (DIGTouchLockPasscodeCharacterView *characterView in self.characters) {
         characterView.fillColor = characterColor;
     }
 }
