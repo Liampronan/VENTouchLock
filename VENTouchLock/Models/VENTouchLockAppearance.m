@@ -1,4 +1,5 @@
 #import "VENTouchLockAppearance.h"
+#import "VENTouchLockEnterPasscodeViewController.h"
 
 @implementation VENTouchLockAppearance
 
