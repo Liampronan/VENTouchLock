@@ -1,7 +1,6 @@
 #import <UIKit/UIKit.h>
-#import "VENTouchLockPasscodeCharacterView.h"
 
-@interface DIGTouchLockPasscodeCharacterView : VENTouchLockPasscodeCharacterView
+@interface DIGTouchLockPasscodeCharacterView : UIView
 
 /**
  * YES if the view represents no character (to display a hyphen character). NO otherwise (to display a bullet character).

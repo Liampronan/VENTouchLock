@@ -48,8 +48,8 @@
     CGFloat radius = CGRectGetWidth(self.bounds) / 2 - borderWidth;
     CAShapeLayer *filledInShape = [CAShapeLayer layer];
     filledInShape.path = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(borderWidth, borderWidth, 2.0*radius, 2.0*radius)
-
-                                             cornerRadius:radius].CGPath;
+                          
+                                                    cornerRadius:radius].CGPath;
     UIColor *filledInShapeColor = [UIColor blackColor];
     filledInShape.fillColor = filledInShapeColor.CGColor;
     filledInShape.strokeColor =  filledInShapeColor.CGColor;
@@ -64,8 +64,8 @@
     CGFloat radius = CGRectGetWidth(self.bounds) / 2 - borderWidth;
     CAShapeLayer *emptyShape = [CAShapeLayer layer];
     emptyShape.path = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(borderWidth, borderWidth, 2.0*radius, 2.0*radius)
-                   
-                                             cornerRadius:radius].CGPath;
+                       
+                                                 cornerRadius:radius].CGPath;
     UIColor *emptyShapeColor = [UIColor blackColor];
     emptyShape.fillColor = emptyShapeColor.CGColor;
     emptyShape.strokeColor =  emptyShapeColor.CGColor;
