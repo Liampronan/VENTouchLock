@@ -21,6 +21,11 @@
  */
 @property (nonatomic, strong) VENTouchLock *touchLock;
 
+/** 
+ Only made public in order to override keyboard shown for this field. Should not be touched otherwise. 
+ */
+@property (strong, nonatomic) UITextField *invisiblePasscodeField;
+
 /**
  Encapsulates the view controller in a navigation controller.
  */
