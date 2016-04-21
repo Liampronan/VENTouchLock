@@ -18,7 +18,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hmH-B4-kMw">
-                    <rect key="frame" x="230" y="136" width="140" height="20"/>
+                    <rect key="frame" x="230" y="211" width="140" height="20"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iua-bQ-4SM" customClass="DIGTouchLockPasscodeCharacterView">
                             <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
@@ -66,8 +66,8 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="centerX" secondItem="hmH-B4-kMw" secondAttribute="centerX" id="OB4-g9-djM"/>
-                <constraint firstItem="eLU-Cf-PfB" firstAttribute="centerY" secondItem="bdw-Aj-hKx" secondAttribute="centerY" multiplier="0.25" id="TGD-DV-zCe"/>
-                <constraint firstItem="eLU-Cf-PfB" firstAttribute="width" secondItem="bdw-Aj-hKx" secondAttribute="width" multiplier="0.7" id="f4B-I3-RL0"/>
+                <constraint firstItem="eLU-Cf-PfB" firstAttribute="centerY" secondItem="bdw-Aj-hKx" secondAttribute="centerY" multiplier="0.5" id="TGD-DV-zCe"/>
+                <constraint firstItem="eLU-Cf-PfB" firstAttribute="width" secondItem="bdw-Aj-hKx" secondAttribute="width" multiplier="0.8" id="f4B-I3-RL0"/>
                 <constraint firstItem="hmH-B4-kMw" firstAttribute="top" secondItem="eLU-Cf-PfB" secondAttribute="bottom" constant="50" id="pIz-k1-Icu"/>
                 <constraint firstAttribute="centerX" secondItem="eLU-Cf-PfB" secondAttribute="centerX" id="xb2-T8-rCA"/>
             </constraints>
