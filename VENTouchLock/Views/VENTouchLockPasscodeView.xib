@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -11,13 +12,13 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create a new Passcode" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLU-Cf-PfB">
-                    <rect key="frame" x="60" y="100" width="480" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Create a new Passcode" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLU-Cf-PfB">
+                    <rect key="frame" x="211" y="65" width="179" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hmH-B4-kMw">
-                    <rect key="frame" x="230" y="171" width="140" height="20"/>
+                    <rect key="frame" x="230" y="136" width="140" height="20"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iua-bQ-4SM" customClass="DIGTouchLockPasscodeCharacterView">
                             <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
@@ -64,10 +65,9 @@
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="eLU-Cf-PfB" secondAttribute="trailing" constant="60" id="H2K-iL-gwe"/>
                 <constraint firstAttribute="centerX" secondItem="hmH-B4-kMw" secondAttribute="centerX" id="OB4-g9-djM"/>
-                <constraint firstItem="eLU-Cf-PfB" firstAttribute="top" secondItem="bdw-Aj-hKx" secondAttribute="top" constant="100" id="X1h-a2-Thl"/>
-                <constraint firstItem="eLU-Cf-PfB" firstAttribute="leading" secondItem="bdw-Aj-hKx" secondAttribute="leading" constant="60" id="j08-YG-djA"/>
+                <constraint firstItem="eLU-Cf-PfB" firstAttribute="centerY" secondItem="bdw-Aj-hKx" secondAttribute="centerY" multiplier="0.25" id="TGD-DV-zCe"/>
+                <constraint firstItem="eLU-Cf-PfB" firstAttribute="width" secondItem="bdw-Aj-hKx" secondAttribute="width" multiplier="0.7" id="f4B-I3-RL0"/>
                 <constraint firstItem="hmH-B4-kMw" firstAttribute="top" secondItem="eLU-Cf-PfB" secondAttribute="bottom" constant="50" id="pIz-k1-Icu"/>
                 <constraint firstAttribute="centerX" secondItem="eLU-Cf-PfB" secondAttribute="centerX" id="xb2-T8-rCA"/>
             </constraints>
