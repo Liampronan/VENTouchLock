@@ -20,6 +20,13 @@ typedef NS_ENUM(NSUInteger, VENTouchLockTouchIDResponse) {
 @property (assign, nonatomic) BOOL backgroundLockVisible;
 
 /**
+ YES if the user has reached touchID Max Retry limit, and NO otherwise.
+ */
+@property (assign, nonatomic)BOOL touchIDMaxRetryReached;
+
+@property (readonly, nonatomic)NSString *kVENTouchLockDidExceedPasscodeLimitNotification;
+
+/**
  @return A singleton VENTouchLock instance.
  */
 + (instancetype)sharedInstance;

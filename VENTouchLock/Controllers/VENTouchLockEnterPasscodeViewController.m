@@ -39,14 +39,15 @@ NSString *const VENTouchLockEnterPasscodeUserDefaultsKeyNumberOfConsecutivePassc
     if ([self.touchLock isPasscodeValid:passcode]) {
         [[self class] resetPasscodeAttemptHistory];
         [self finishWithResult:YES animated:YES];
+        self.touchLock.touchIDMaxRetryReached = NO;
     }
     else {
         [self.passcodeView shakeAndVibrateCompletion:^{
             self.passcodeView.title = [self.touchLock appearance].enterPasscodeIncorrectLabelText;
             [self clearPasscode];
-            if ([self parentSplashViewController]) {
+//            if ([self parentSplashViewController]) {
                 [self recordIncorrectPasscodeAttempt];
-            }
+//            }
         }];
 
     }
@@ -66,9 +67,13 @@ NSString *const VENTouchLockEnterPasscodeUserDefaultsKeyNumberOfConsecutivePassc
 
 - (void)callExceededLimitActionBlock
 {
-    [[self parentSplashViewController] dismissWithUnlockSuccess:NO
-                                                     unlockType:VENTouchLockSplashViewControllerUnlockTypeNone
-                                                       animated:NO];
+    if ([self parentSplashViewController] != nil) {
+        [[self parentSplashViewController] dismissWithUnlockSuccess:NO
+                                                         unlockType:VENTouchLockSplashViewControllerUnlockTypeNone
+                                                           animated:NO];
+    } else {
+        [[NSNotificationCenter defaultCenter] postNotificationName:self.touchLock.kVENTouchLockDidExceedPasscodeLimitNotification object:nil];
+    }
 }
 
 - (VENTouchLockSplashViewController *)parentSplashViewController

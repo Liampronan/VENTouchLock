@@ -147,6 +147,9 @@
         if (self.didFinishWithSuccess) {
             self.didFinishWithSuccess(success, unlockType);
         }
+        if (success) {
+            self.touchLock.touchIDMaxRetryReached = NO;
+        }
     }];
 }
 
